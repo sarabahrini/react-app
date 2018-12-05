@@ -1,0 +1,31 @@
+@import "variables";
+
+.header {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 40px;
+  line-height: 40px;
+  font-family: sans-serif;
+
+  span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: darken($color3, 10%);
+    font-weight: bold;
+  }
+
+  nav {
+    @media (max-width: 600px) {
+      display: none;
+    }
+    float: right;
+    a {
+      line-height: 40px;
+      padding: 10px;
+      color: lighten($color5, 10%);
+      text-decoration: none;
+    }
+    a:hover {
+      color: darken($color5, 10%);
+    }
+  }
+}
