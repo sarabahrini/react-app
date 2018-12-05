@@ -1,0 +1,13 @@
+@import "variables";
+
+body {
+  background: linear-gradient(
+    to bottom,
+    $color1,
+    $color2,
+    $color3,
+    $color4,
+    $color5
+  );
+  margin: 0;
+}
